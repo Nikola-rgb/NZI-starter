@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;800&display=swap');
+:root {
+    --accents: #e1a0b1;
+    --basicColor: #333;
+    --transition: .4s ease;
+    --padding: 70px 0;
+    --white: #fff;
+    --violet: #955791;
+    --lightGray: #fbf5f9;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+h1,h2,h3,h4,h5 {
+    font-weight: 400;
+}
+a {
+    text-decoration: none;
+    color: var(--basicColor);
+}
+a:hover{
+    color: var(--accents);
+    transition: var(--transition);
+}
+.bg-light{
+    background: rgba(255,255,255,.6) !important;
+}
+.btn {
+    background: var(--accents);
+    padding: 15px 0;
+    width: 250px;
+    border-radius: 20px;
+}
+.btn:hover{
+    background: var(--violet);
+    color: var(--white);
+}
+h2::after {
+    display: block;
+    content: "";
+    height: 3px;
+    width: 100px;
+    background: var(--accents);
+    margin: 20px 0;
+}
+.py-5 {
+    padding: 100px 0 !important;
+}
+
+
+/****************
+nav
+****************/
+.navbar-brand img {
+    width: 100px;
+}
+.nav-link {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+.nav-link:hover {
+    color: #955791 !important;
+}
+.navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
+    color: #955791 !important;
+}
+
+/*header*/
+
+header{
+    background-image: url(img/NZI-home%20beli.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+}
+
+header .col-md-8 {
+    height: 80vh;
+}
+header h1 {
+    font-size: 4rem;
+    font-weight: 800;
+}
+
+/*Ciljevi*/
+
+/****************
+ciljevi
+****************/
+.ciljevi {
+    background: linear-gradient(to right,var(--lightGray), var(--white));
+    border-radius: 400px 0 0 0;
+}
+.ciljevi h2::after {
+    margin: 20px auto;
+}
+.ciljevi i {
+    color: var(--accents);
+    font-size: 3rem;
+}
+
+/****************
+novosti
+****************/
+.novosti .meta {
+    background: var(--lightGray);
+    padding: 3px;
+    margin: 10px 0;
+}
+.novosti h2::after {
+    margin: 20px auto;
+}
+
+/****************
+partneri
+****************/
+.partneri {
+    display: flex;
+    align-items: center;
+    background: #fdf9fb;
+}
+.partneri article {
+    flex: 1;
+    padding: 20px;
+}
+.parnteri img {
+    width: 100%;
+}
+/****************
+footer
+****************/
+footer img {
+    width: 150px;
+}
+footer .col-md-4:last-child {
+    font-size: .9rem;
+}
